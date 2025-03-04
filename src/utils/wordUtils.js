@@ -2,7 +2,15 @@ const ignoredWords = new Set([
   "após", "até", "com", "contra", "desde", "entre", "para", "por", 
   "sem", "sob", "sobre", "trás", "como", "este", "esse", "aquele", 
   "aquela", "ela", "ele", "dele", "dela", "esta", "essa", "está", 
-  "seu", "sua", "nós", "vós", "eles", "elas"
+  "seu", "sua", "nós", "vós", "eles", "elas", "uns", "umas", "nas", "nos", 
+  "àquela", "àqueles", "que", "pela", "pelo", "pelos", "pelas", "cada",
+  "quem", "qual", "quais", "quanto", "quantos", "tanto", "também", 
+  "mas", "porque", "porém", "contudo", "entretanto", "logo", "então", 
+  "embora", "seja", "são", "foi", "foram", "mesmo", 
+  "estão", "estar", "estive", "estivemos", "estiveram", "havia", 
+  "haver", "ainda", "muito", "mais", "menos", "mais", "bem", 
+  "bastante", "pode", "deve", "haver", "dever", "querer", "poder", 
+  "ir", "vai", "fui", "ficou", "voltar", "ficar"
 ]);
 
 export function countRepeatedWords(text) {
