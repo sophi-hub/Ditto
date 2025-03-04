@@ -1,4 +1,4 @@
-# **Ditto** – Analisador de palavras repetidas em textos! 🚀💬
+# **Ditto** – Analisador de palavras repetidas em textos! 💬
 
 <div align="start">
   <img src="https://img.shields.io/badge/Node.js-Fast%20Backend-00c2f4?style=for-the-badge&logo=node.js&logoColor=white">
@@ -67,14 +67,14 @@ npm install express ejs chalk bootstrap
 npm install --save-dev nodemon eslint prettier 
 ```
 
-🚀 Execute o servidor:
+🔽 Execute o servidor:
 ```bash
 npm start
 ```
 
 ## **Contribuindo para o Projeto** 🤝
 
-Quer ajudar a melhorar o **Kuut**? Siga os passos abaixo e contribua com melhorias!  🚀💻
+Quer ajudar a melhorar o **Kuut**? Siga os passos abaixo e contribua com melhorias! 💻
 
 - Faça um **fork** deste repositório  
 - Crie uma **nova branch**: git checkout -b feature-sua-feature  
