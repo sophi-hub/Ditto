@@ -1,12 +1,5 @@
-body {
-  font-family: Arial, sans-serif;
-}
+@import "base/reset.css";
+@import "base/variables.css";
+@import "base/global.css";
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-textarea {
-  width: 100%;
-}
+@import "components/button-switch.css";
