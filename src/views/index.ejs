@@ -1,0 +1,12 @@
+<%- include('partials/header') %>
+
+<main>
+  <h1>Verificar repetição de palavras</h1>
+  <form action="/process-input" method="POST">
+    <label for="inputText">Digite seu texto:</label>
+    <textarea id="inputText" name="inputText" rows="6" required></textarea>
+    <button type="submit">Analisar</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>

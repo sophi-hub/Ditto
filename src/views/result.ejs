@@ -1,0 +1,25 @@
+<%- include('partials/header') %>
+
+<main>
+  <h1>Result</h1>
+  
+  <% if (Array.isArray(result) && result.length > 0) { %>
+    <ul>
+      <% result.forEach(item => { %>
+        <li>
+          A palavra "<%= item.word %>" aparece <%= item.count %> vezes no texto, 
+          <% if (item.paragraphs.length === 1) { %>
+            no parágrafo <%= item.paragraphs[0] %>.
+          <% } else { %>
+            nos parágrafos <%= item.paragraphs.slice(0, -1).join(', ') %> e <%= item.paragraphs[item.paragraphs.length - 1] %>.
+          <% } %>
+        </li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>Não há palavras repetidas no texto.</p>
+  <% } %>
+  <a href="/" class="btn btn-primary">Voltar para a página inicial</a>        
+</main>
+
+<%- include('partials/footer') %>
