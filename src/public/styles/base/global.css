@@ -5,4 +5,6 @@ html {
 body {
     font: 400 1.6rem var(--font-secundary);
     overflow-x: hidden;
+    box-sizing: border-box;
+    text-transform: lowercase;
 }

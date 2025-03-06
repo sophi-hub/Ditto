@@ -1,0 +1,30 @@
+.forms-text__textarea {
+  resize: none;
+  height: 70vh;
+  width: 100%;
+  border: none;
+  padding: 2vh;
+  background-color: var(--color-white);
+  position: relative;
+
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  &:focus {
+    border-bottom: 3px solid var(--color-blue);
+    box-shadow: 0 0 5px var(--color-black);
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 900;
+    font-size: 3.4rem;
+    color: var(--color-gray);
+    text-transform: lowercase;
+    text-align: center;
+    padding: 2vh 0;
+  }
+}

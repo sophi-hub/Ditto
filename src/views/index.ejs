@@ -1,12 +1,13 @@
 <%- include('partials/header') %>
 
-<main>
-  <h1>Verificar repetição de palavras</h1>
-  <form action="/process-input" method="POST">
-    <label for="inputText">Digite seu texto:</label>
-    <textarea id="inputText" name="inputText" rows="6" required></textarea>
-    <button type="submit">Analisar</button>
+<main class="d-flex flex-column align-items-center text-center mt-5">
+  <form action="/process-input" method="POST" class="w-75 w-md-50">
+    <div class="mb-3">
+      <textarea id="inputText" placeholder="Paste your text here to see the words repeated in it" name="inputText" rows="6" class="form-control textarea forms-text__textarea" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Analisar</button>
   </form>
 </main>
+
 
 <%- include('partials/footer') %>

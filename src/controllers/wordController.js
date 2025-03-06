@@ -1,7 +1,7 @@
 import { countRepeatedWords } from "../utils/wordUtils.js";
 
 export const getHomePage = (req, res) => {
-  res.render("index", { title: "Ditto | Análise seu Texto" });
+  res.render("index", { title: "Ditto | Analise o seu Texto" });
 };
 
 export const postProcessInputText = (req, res) => {

@@ -3,3 +3,6 @@
 @import "base/global.css";
 
 @import "components/button-switch.css";
+
+@import "layout/header.css";
+@import "layout/index.css";
