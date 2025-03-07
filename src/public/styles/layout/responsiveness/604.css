@@ -1,0 +1,11 @@
+@media only screen and (max-width: 604px) {
+  .forms-text__textarea {
+    width: 80vw;
+    padding: 2vh 4vw;
+  }
+
+  .container-result {
+    width: 80vw;
+    height: 90vh;
+  }
+}

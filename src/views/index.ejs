@@ -1,13 +1,26 @@
 <%- include('partials/header') %>
 
-<main class="d-flex flex-column align-items-center text-center mt-5">
-  <form action="/process-input" method="POST" class="w-75 w-md-50">
-    <div class="mb-3">
-      <textarea id="inputText" placeholder="Paste your text here to see the words repeated in it" name="inputText" rows="6" class="form-control textarea forms-text__textarea" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary w-100">Analisar</button>
-  </form>
-</main>
+<main class="d-flex flex-column align-items-center text-center position-relative vh-100 w-100">
+  
+  <section class="position-fixed top-0 start-0 w-100 h-100 overflow-hidden z-n1">
+    <video id="background-video" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover" aria-label="Vídeo de fundo com animação">
+      <source src="/assets/video-background-ditto-light.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+  </section>
 
+  <form action="/process-input" method="POST" class="w-md-50 position-relative mt-5" aria-labelledby="form-analyze-text">
+    <fieldset>
+      <legend id="form-analyze-text" class="visually-hidden">Formulário de análise de texto</legend>
+      
+      <label for="inputText" class="visually-hidden">Cole seu texto aqui para ver as palavras que se repetem nele</label>
+      <textarea id="inputText" name="inputText" rows="6" placeholder="Cole seu texto aqui para verificar as palavras que se repetem nele" class="form-control forms-text__textarea animate__animated animate__zoomIn" required aria-describedby="inputText-help"></textarea>
+      <div id="inputText-help" class="visually-hidden">Digite ou cole o texto e clique em 'Analisar' para visualizar as palavras repetidas.</div>
+      
+      <button type="submit" class="form-text_button" aria-label="Analisar o texto">Analisar</button>
+    </fieldset>
+  </form>
+
+</main>
 
 <%- include('partials/footer') %>

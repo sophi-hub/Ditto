@@ -1,25 +1,43 @@
 <%- include('partials/header') %>
 
-<main>
-  <h1>Result</h1>
-  
-  <% if (Array.isArray(result) && result.length > 0) { %>
-    <ul>
-      <% result.forEach(item => { %>
-        <li>
-          A palavra "<%= item.word %>" aparece <%= item.count %> vezes no texto, 
-          <% if (item.paragraphs.length === 1) { %>
-            no parágrafo <%= item.paragraphs[0] %>.
-          <% } else { %>
-            nos parágrafos <%= item.paragraphs.slice(0, -1).join(', ') %> e <%= item.paragraphs[item.paragraphs.length - 1] %>.
-          <% } %>
-        </li>
-      <% }) %>
-    </ul>
-  <% } else { %>
-    <p>Não há palavras repetidas no texto.</p>
-  <% } %>
-  <a href="/" class="btn btn-primary">Voltar para a página inicial</a>        
+<main class="d-flex flex-column justify-content-center align-items-center vh-100 text-center">
+
+  <section class="position-fixed top-0 start-0 w-100 h-100 overflow-hidden z-n1">
+    <video id="background-video" autoplay loop muted playsinline class="w-100 h-100 object-fit-cover" aria-label="Vídeo de fundo com animação">
+      <source src="/assets/video-background-ditto-light.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos.
+    </video>
+  </section>
+
+  <section class="container-result d-flex flex-column justify-content-center align-items-center p-4 overflow-auto">
+    <header>
+      <h1 class="visually-hidden">Resultados da análise de texto</h1>
+    </header>
+
+    <section aria-labelledby="results-list">
+      <h2 id="results-list" class="visually-hidden">Resultados encontrados</h2>
+      
+      <% if (Array.isArray(result) && result.length > 0) { %>
+        <ul class="list-unstyled">
+          <% result.forEach(item => { %>
+            <li>
+              A palavra "<%= item.word %>" aparece <%= item.count %> vezes no texto, 
+              <% if (item.paragraphs.length === 1) { %>
+                no parágrafo <%= item.paragraphs[0] %>.
+              <% } else { %>
+                nos parágrafos <%= item.paragraphs.slice(0, -1).join(', ') %> e <%= item.paragraphs[item.paragraphs.length - 1] %>.
+              <% } %>
+            </li>
+          <% }) %>
+        </ul>
+      <% } else { %>
+        <p>Não há palavras repetidas no texto.</p>
+      <% } %>
+    </section>
+
+    <a href="/" class="form-text_button text-decoration-none mt-13" aria-label="Voltar para a página inicial">Voltar para a página inicial</a>
+
+  </section>
 </main>
 
 <%- include('partials/footer') %>

@@ -3,6 +3,9 @@
 @import "base/global.css";
 
 @import "components/button-switch.css";
+@import "components/button.css";
 
 @import "layout/header.css";
 @import "layout/index.css";
+@import "layout/result.css";
+@import "layout/responsiveness/604.css";

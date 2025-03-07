@@ -1,0 +1,16 @@
+.form-text_button {
+    padding: 2vh 8vw;
+    margin: 3vh 0;
+    border-radius: 30px;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-blue);
+    transition: transform 0.5s ease;
+    font: 400 2.8rem var(--font-primary); 
+    color: var(--color-black);
+    text-transform: lowercase;
+
+    &:hover {
+        transform: scale(1.05);
+        background-color: var(--color-blue);
+    }
+}

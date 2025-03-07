@@ -1,10 +1,8 @@
 :root {
-    --color-black: #000;
-    --color-dark-grey: #2a2a2a;
+    --color-dark-gray: #2a2a2a;
     --color-gray: #bdc7c8;
     --color-white: #fff;
     --color-blue: #00a6ff;
     
     --font-primary: "League Spartan", sans-serif;
-    --font-secundary: "Poppins", sans-serif;
 }

@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font: 400 1.6rem var(--font-secundary);
+    font: 400 2rem var(--font-primary);
     overflow-x: hidden;
     box-sizing: border-box;
     text-transform: lowercase;
