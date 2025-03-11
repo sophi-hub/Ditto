@@ -74,7 +74,7 @@ npm start
 
 ## **Contribuindo para o Projeto** 🤝
 
-Quer ajudar a melhorar o **Kuut**? Siga os passos abaixo e contribua com melhorias! 💻
+Quer ajudar a melhorar o **Ditto**? Siga os passos abaixo e contribua com melhorias! 💻
 
 - Faça um **fork** deste repositório  
 - Crie uma **nova branch**: git checkout -b feature-sua-feature  
