@@ -67,7 +67,7 @@ cd Ditto
 
 📦 Instale as dependências:
 ```bash
-npm install express ejs chalk bootstrap 
+npm install express ejs bootstrap 
 npm install --save-dev nodemon eslint prettier 
 ```
 
