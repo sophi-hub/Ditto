@@ -32,11 +32,15 @@ Com o **Ditto**, você pode:
 | **GitHub** | Plataforma de hospedagem de código-fonte e controle de versão usando Git | ![GitHub](https://img.shields.io/badge/GitHub-00c2f4?style=for-the-badge&logo=github&logoColor=white) |
 | **Nodemon** | Ferramenta para reinicialização automática do servidor durante o desenvolvimento | 🔄🌐 |
 | **EJS** | Sistema de templates dinâmicos para a criação de páginas interativas | 🔧💻 |
-| **SEO** | Otimização para motores de busca, melhorando o posicionamento do site | 🔍💬 |
-| **Acessibilidade** | Foco em garantir que a interface seja inclusiva para todos | ♿💙 |
+| **DOM** | Manipulação eficiente da estrutura do documento | 🏗️💬 |
+| **Animate.css** | Animações suaves e atraentes | 🎭💬 |
+| **BEM** | Organização do CSS para melhor manutenção | 🎨💬 |
+| **Acessibilidade** | UI inclusiva e otimizada para todos | ♿💬 |
+| **SEO** | Melhor posicionamento no Google | 🔍💬 |
 | **Partials** | Uso de partials para reutilizar código de menu e rodapé, garantindo melhor organização | 📂💬 |
-| **Clean Code** | Metodologia de codificação para garantir um código limpo e fácil de entender | 🧹💬 |
+| **Arquitetura MVC** | Organização do projeto para melhor escalabilidade | 📂💬 |
 | **Escalabilidade** | Arquitetura e práticas para garantir que o sistema cresça sem comprometer a performance | 📈💬 |
+| **Clean Code** | Metodologia de codificação para garantir um código limpo e fácil de entender | 🧹💬 |
 
 ---
 
